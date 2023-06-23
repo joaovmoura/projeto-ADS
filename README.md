@@ -4,18 +4,22 @@ Projeto desenvolvido para a discinplina de Administração de sistemas no perío
 
 ---
 
-## Instruçoẽs de setup usadas para o grafana e do prometheus
+## O que foi feito?
 
-Link notion -> https://abalone-freedom-4a2.notion.site/Projeto-7e865a83a04e49539fc8c78967c29f2c
+- Foi desenvolvida uma aplicação simples em python, usando flask, que exibe um hello world na tela.
+- Foi feito um docker compose que sobe as instâncias do ELK, do grafana e do prometheus.
+- Além disso, também foi feito um script em pyhton que executa um número X de requisições a fim de realizar um aumento na carga do ELK para observar o consumo de recursos pelo grafana.
 
 ---
 
-## O que foi feito?
+## ELK Setup
 
-Foi desenvolvida uma aplicação simples em python, usando flask, que exibe um hello world na tela. Também foi feito um docker compose que sobe as instâncias do ELK, do grafana e do prometheus. Além disso, também foi feito um script em pyhton que executa um número X de requisições a fim de realizar um aumento na carga do ELK para observar o consumo de recursos pelo grafana.
+- Foi utilizado o Docker para configurar o ELK, utilizamos as imagens oficiais disponibilizadas no Docker Hub ([elasticsearch](https://hub.docker.com/_/elasticsearch), [logstash](https://hub.docker.com/_/logstash), [kibana](https://hub.docker.com/_/kibana))
+- Já para a configuração do Prometheus e Grafana utilizamos um [repositório externo](https://github.com/stefanprodan/dockprom)
+- O dashboard que utilizamos é o padrão, já disponibilizado pelo Grafana
 
 ---
 
 ## Demonstração
 
-Link para o vídeo: https://drive.google.com/drive/folders/1fpSWkp003plBiEdSZxc49ZHZCwXvkizt
+Link para a [demo](https://drive.google.com/drive/folders/1fpSWkp003plBiEdSZxc49ZHZCwXvkizt)
